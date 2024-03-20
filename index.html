@@ -2,48 +2,113 @@
 <html lang="ko">
 <head>
   <style>
-    a {
-      text-decoration-line: none;
-      color: white;
-      font-size: 200%;
-      line-height: 200px;
-    }
-    header {
+    #page-header .header-image {
       background-image: url(enemy.jpg);
       background-size: 100% 100%;
       background-repeat: no-repeat;
+      border-radius: 10px;
       height: 200px;
     }
-    main {
+    #shortcutArea .shortcut_list {
+      margin: 10px 0px 10px 0px;
+      list-style: none;
+      display: flex;
+      padding-left: 0px;
+    }
+    #shortcutArea .shortcut_item {
+      text-align: center;
+      display: inline-block;
+      flex: 1 1 0;
+      height: 40px;
+    }
+    #shortcutArea .shortcut_item > a {
+      text-decoration: none;
+      width: 100%;
+      height: 100%;
+      color: black;
+    }
+    #shortcutArea .icon_youtube {
+      display: inline-block;
+      background-image: url(youtube.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 80px;
+      height: 40px;
+    }
+    #shortcutArea .icon_instargram {
+      display: inline-block;
+      background-image: url(instargram.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 40px;
+      height: 40px;
+    }
+    #shortcutArea .none {
+      display: inline-block;
+      color: midnightblue;
+      height: 40px;
+      line-height: 40px;
+    }
+
+    #page-main {
       background-image: url(bae.jpeg);
       background-size: 100% 100%;
       background-repeat: no-repeat;
       height: 500px;
     }
-    footer {
-      background-image: url(footer.jpeg);
-      background-size: 100% 100%;
-      background-repeat: no-repeat;
-      height: 100%;
+
+    #page-footer {
+      font-size: 50px;
+      margin: 20px 0px 20px 0px;
+      background-color: #908787;
+      border-radius: 10px;
+      text-align: center;
+      padding: 30px 0 30px 0;
     }
   </style>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>김태수</title>
-<body style="background-color:black">
-  <div id="wrap">
-    <header>
-    <h1 style="text-align: center; padding: 60px; color:#908787; font-size:50px; text-shadow: 2px 1px 3px white">수태씨</h1>
+  <title>수태씨</title>
+<body style="background-color:white">
+  <header id="page-header">
+    <div class="header-image">
+      <h1 style="text-align: center; line-height: 200px; color:#908787; font-size:50px; margin: 0px; text-shadow: 2px 1px 3px white">수태씨</h1>
+    </div>
+    <div id="shortcutArea">
+      <ul class="shortcut_list">
+        <li class="shortcut_item">
+          <a href="https://www.instagram.com/3xpt.s/" target="_blank">
+            <span class="icon_instargram"></span>
+          </a>
+        </li>
+        <li class="shortcut_item">
+          <a href="tuck1.html" target="_blank">
+            <span class="none">김태수</span>
+          </a>
+        </li>
+        <li class="shortcut_item">
+          <a href="tuck2.html" target="_blank">
+            <span class="none">김수태</span>
+          </a>
+        </li>
+        <li class="shortcut_item">
+          <a href="tuck3.html" target="_blank">
+            <span class="none">수태씨</span>
+          </a>
+        </li>
+        <li class="shortcut_item">
+          <a href="https://www.youtube.com/@tucks00" target="_blank">
+            <span class="icon_youtube"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
   </header>
-  <main>
+  <main id="page-main">
   </main>
-  <footer>
-    <nav>
-      <a href="https://www.youtube.com/@tucks00" target="_blank">https://www.youtube.com/@tucks00</a></li>
-      <a href="https://www.instagram.com/3xpt.s/" target="_blank">https://www.instagram.com/3xpt.s</a>
-    </nav>
+  <footer id="page-footer">
+    <p>수태씨의 홈페이지</p>
   </footer>
-  </div>
   
 </body>
 </html>
